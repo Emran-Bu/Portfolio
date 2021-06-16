@@ -299,6 +299,7 @@ aside .sidebarIcon ul li a{
 }
 
 .mainBgImg h2{
+    margin-top: 10px;
     font-weight: 700;
     /* color: #eee; */
     color: #f50808 !important;
@@ -310,6 +311,7 @@ aside .sidebarIcon ul li a{
     font-size: 45px;
     font-weight: 800;
     font-family: montserrat;
+    margin-top: 20px;
 }
 
 .mainBgImg h3 span{
@@ -323,12 +325,13 @@ aside .sidebarIcon ul li a{
     font-size: 25px;
     font-weight: 700;
     font-family: poppins;
+    margin-top: 20px;
 }
 
 /* Hire Me */
 
 .hire{
-    margin-top: 25px;
+    margin-top: 55px;
     transition: all 0.5 ease;
 }
 
@@ -348,3 +351,93 @@ aside .sidebarIcon ul li a{
     color: #fff;
 }
 
+/* arrow part */
+
+.opa .wrapper{
+    margin-top: 150px;
+}
+
+.icon {
+    /* color: red; */
+    color: #fff;
+    font-size: 25px;
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+
+    60% {
+        transform: translateY(-15px);
+    }
+
+    80% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* about part */
+
+.about{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.about .aboutDiv{
+
+}
+
+.aboutDiv .bio span{
+    color: #e65f78;
+    font-family: poppins;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.aboutDiv .bio h3{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/* My Animation Image  */
+
+.img1{
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    border: 5px solid black;
+    transition: 0.2s all ease;
+    /* transform: translate3d(10px, 15px, 0px); */
+    transform-style: preserve-3d;
+
+}
+
+.img1 img{
+    margin: 25px;
+    height: 300px;
+    width: 300px;
+    transition: .5s;
+    /* transform: translate3d(10px, 15px, 0px); */
+}
