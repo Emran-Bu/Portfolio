@@ -236,23 +236,55 @@ aside .sidebarIcon ul li a{
 }
 
 .mainBg .mainBgImg{
-    background: url('../img/mainBg//estricted.gif');
+    background: url('../img/mainBg/animated-sea-and-ocean-image-0008.gif');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
 
-    display: grid;
-    place-content: center;
-    place-items: center;
+    /* z-index: -999; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
     
 }
+
+.mainBgImg .opa{
+    
+    z-index: 1;
+    
+    /* display: grid;
+    place-content: center;
+    place-items: center; */
+
+    /* display: flex;
+    align-items: center;*/
+    /* justify-content: center; */
+    
+
+}
+
+
+.mainBg .mainBgImg::before{
+    content: "";
+    position: absolute;
+    top : 0;
+    left : 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+  
+  }
 
 /* midBgImg */
 
 .midBgImg{
     width: 150px;
     height: 150px;
+    margin: 0 auto;
 }
 
 .midBgImg{
@@ -267,9 +299,9 @@ aside .sidebarIcon ul li a{
 }
 
 .mainBgImg h2{
-    font-weight: 500;
+    font-weight: 700;
     /* color: #eee; */
-    color: #20c997 !important;
+    color: #f50808 !important;
 }
 
 .mainBgImg h3{
@@ -287,8 +319,32 @@ aside .sidebarIcon ul li a{
 /* typewriter part */
 
 .typewriter{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 25px;
     font-weight: 700;
     font-family: poppins;
 }
+
+/* Hire Me */
+
+.hire{
+    margin-top: 25px;
+    transition: all 0.5 ease;
+}
+
+.hire a{
+    text-decoration: none;
+    color: #00ffb3;
+    background: transparent;
+    border: 1px solid #00ffb3;
+    border-radius: 50px;
+    padding: 12px 42px;
+    font-size: 18px;
+}
+
+.hire a:hover{
+    background: #20C997;
+    /* opacity: 0.5; */
+    color: #fff;
+}
+

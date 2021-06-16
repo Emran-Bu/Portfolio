@@ -62,3 +62,13 @@ $("#example").typer({
       useCursor:true
 
   });
+
+  //Script for water Plugin 
+
+  $(document).ready(function() {
+    // $('section').ripples();
+    $('.mainBgImg').ripples({
+        dropRadius: 12,
+        perturbance: 0.05,
+    });
+})
