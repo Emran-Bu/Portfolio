@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav part */
+
+
+.navIcon{
+    margin-right: 25px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.nav1, .nav3{
+    width: 30px;
+    height: 2px;
+    display: block;
+    background: rgb(255, 255, 255);
+    margin-top: 3px;
+    transition: 0.3s all ease-in-out;
+    
+}
+
+.nav1{margin-top: 9px;}
+
+.nav2{
+    
+    width: 30px;
+    height: 2px;
+    display: block;
+    background: rgb(255, 255, 255);
+    /* margin-top: 3px; */
+    margin: 5px 0;
+    transition: 0.15s all ease-in-out;
+}
+
+.nav1.anim1{
+    transform: rotate(45deg);
+    position: absolute;
+    transition: 0.3s all ease-in-out;
+}
+
+.nav2.anim2{
+    transform: rotate(45deg);
+    position: absolute;
+    transition: 0.3s all ease-in-out;
+}
+
+.nav3.anim3{
+    position: absolute;
+    transform: rotate(-45deg);
+    transition: 0.3s all ease-in-out;
+}
+
+.anim1{
+    top: 5px;
+}
+
+.anim2{
+    top: 9px;
+    /* top: 11px; */
+}
+
+.anim3{
+    top: 10px;
+}
+
+.navIcon:hover{
+    transform: scale(1.2);
+}
+
+
+/*  */
+
+.navDiv{
+    margin-top: -8px;
+}
+
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbg{
+    background: #111418 !important;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item{
+    border-bottom: 1px solid #7d7676;  
+}
+
+.nav-item:last-child{
+    border-bottom: none; 
+}
+
+.nav-link{
+    color: #eee !important;
+    font-size: 16px;
+    transition: 0.2s ease;
+}
+
+.nav-link.active{
+    color: #20c997 !important;
+}
+
+.menuBg{
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.nav-link:hover{
+    color: rgb(240, 38, 38) !important;
+}
+
+.navbar-nav{
+    padding: 0px 25px;
+}
+
+/*  */
+
+/* sidebar part */
+
+.sidebar{
+
+}
+
+.sidebarImg{
+    width : 150px;
+    height: 150px;  
+}
+
+aside .sidebarImg img{
+    margin-top: 25px;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    /* border : 5px solid #343A40; */
+    border : 5px solid #a38ca2;
+    transition: all .3s ease;
+}
+
+aside .name h3{
+    padding-top: 40px;
+    padding-bottom: 0px;
+    color: #eee;;
+    text-align: center;
+}
+
+.sidebar aside{
+
+    background: #002245;
+    height:100vh;
+    padding-left: 40px;
+    padding-right: 25px;
+
+}
+
+aside ul{
+    margin-top: 5px;
+    list-style: none;
+    color: #eee;
+    padding-left: 10px; 
+}
+
+aside ul li{
+    padding: 14px 0px;
+    cursor: pointer;
+    transition: all .3s ease;
+    border-bottom: 1px solid rgba(248, 224, 224, 0.1);
+}
+
+aside ul li:last-child{
+    border-bottom: none;
+}
+
+aside ul li a{
+    color: #eee;
+    text-decoration: none;
+    padding: 13px;
+}
+
+aside ul li a.active{
+    color: #20c997 !important;
+}
+
+aside ul li a:hover{
+    color: rgb(240, 38, 38) !important;
+}
+
+/* sidebar icon */
+
+.sidebarIcon{
+    /* width: 100%; */
+}
+
+aside .sidebarIcon ul {
+    position: fixed;
+    margin-top: -10px;
+}
+
+aside .sidebarIcon ul li{
+    border-bottom: none;
+}
+
+aside .sidebarIcon ul li a{
+    color: #eee;
+}
+
+
+/* Main Bg part */
+
+
+#mainPart{
+    
+}
+
+.mainBg{
+    height: 100vh;
+    min-height: 500px;
+}
+
+.mainBg .mainBgImg{
+    background: url('../img/mainBg//estricted.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+
+    display: grid;
+    place-content: center;
+    place-items: center;
+    
+}
+
+/* midBgImg */
+
+.midBgImg{
+    width: 150px;
+    height: 150px;
+}
+
+.midBgImg{
+
+}
+
+.midBgImg img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid rgba(248, 224, 224, 0.2);
+}
+
+.mainBgImg h2{
+    font-weight: 500;
+    /* color: #eee; */
+    color: #20c997 !important;
+}
+
+.mainBgImg h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 800;
+    font-family: montserrat;
+}
+
+.mainBgImg h3 span{
+    color: #e65f78;
+}
+
+/* typewriter part */
+
+.typewriter{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 700;
+    font-family: poppins;
+}
