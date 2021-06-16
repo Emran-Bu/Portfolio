@@ -408,36 +408,63 @@ aside .sidebarIcon ul li a{
 
 }
 
+.aboutDiv .bio{
+    
+}
+ 
 .aboutDiv .bio span{
     color: #e65f78;
     font-family: poppins;
     font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 4px;
 }
 
 .aboutDiv .bio h3{
     font-size: 30px;
     font-weight: 900;
+    margin-top: 10px;
 }
 
 /* My Animation Image  */
 
+.imgDiv{
+    margin-top: 160px;
+    padding-left: 35px; 
+    transition: 0.5s all ease;
+}
+
 .img1{
-    height: 300px;
+
+    height: 350px;
+    width: 300px;
+    position: relative;
+}
+
+.img1 .myBorder{
+    height: 350px;
     width: 300px;
     display: inline-block;
-    border: 5px solid black;
-    transition: 0.2s all ease;
-    /* transform: translate3d(10px, 15px, 0px); */
+    border: 8px solid black;
     transform-style: preserve-3d;
-
+    position: absolute;
 }
 
 .img1 img{
-    margin: 25px;
-    height: 300px;
-    width: 300px;
-    transition: .5s;
-    /* transform: translate3d(10px, 15px, 0px); */
+    margin: -30px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top : 0;
+    left : 0;
+}
+
+.img1 .ab:before{
+    content: "";
+    position: absolute;
+    margin: -30px;
+    top : 0;
+    left : 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
 }

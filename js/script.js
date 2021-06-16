@@ -72,3 +72,14 @@ $("#example").typer({
         perturbance: 0.05,
     });
 })
+
+// my image animation
+
+$('body').mousemove(function(e) {
+  
+  var moveX = (e.pageX * 1 /120) 
+  var moveY = (e.pageY * 1 / 120) 
+  $('.img1').css('margin', moveX + 'px ' + moveY + 'px')
+  $('.myBorder').css('margin', - moveX + 'px ' + - moveY + 'px')
+
+})
