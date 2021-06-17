@@ -422,7 +422,7 @@ aside .sidebarIcon ul li a{
 
 .aboutDiv .bio h3{
     font-size: 30px;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 10px;
 }
 
@@ -585,4 +585,74 @@ aside .sidebarIcon ul li a{
 .myIntro .cv a:hover{
     color: #fff;
     transition: 1s all ease-in-out;
+}
+
+/* Education Section */
+
+
+.academic{
+    margin-bottom: 150px;
+}
+
+.education .eduTitle span{
+    color: #e65f78;
+    font-family: poppins;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.education .eduTitle h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.academic .education{
+    background-color: #f9f9f9;
+    padding: 140px 0;
+}
+
+.eduTitle{
+    margin-bottom: 120px;
+}
+
+.boxEdu{}
+
+.boxEdu .jdc{
+    border: 1px solid #ddd;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+.boxEdu .jdc h2{
+    font-weight: normal;
+    padding: 25px 0;
+}
+
+.boxEdu .jdc label{
+    color: #d84714;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.boxEdu .jdc h6{
+    font-weight: normal;
+    color: blueviolet;
+}
+
+.boxEdu .jdc span{
+    background: #20c997;
+    padding: 6px 10px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+.boxEdu .jdc p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    font-family: 'Poppins', sans-serif;
 }
