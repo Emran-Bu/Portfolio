@@ -933,3 +933,168 @@ aside .sidebarIcon ul li a{
         width: 100%;
     }
 }
+
+
+/* portfolio section */
+
+
+.portfolioSection{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.innerPortfolioSection{
+    background-color: #f9f9f9;
+    padding: 140px 0;
+}
+
+.innerPortfolioSection .portfolioTitle{
+
+}
+
+.innerPortfolioSection .portfolioTitle span{
+    color: #e65f78;
+    font-family: poppins;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.innerPortfolioSection .portfolioTitle h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/* filter part */
+
+.innerPortfolioSection .filter{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    transition: all 0.2s cubic-bezier(0.34,1.12,0.68,1.31);
+}
+
+.innerPortfolioSection .filter .controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.innerPortfolioSection .filter .controls .filterBtn{
+    height: 40px;
+    width: 140px;
+    background: #fff;
+    color: #666;
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.innerPortfolioSection .filter .controls .filterBtn.active{
+    background: coral;
+    color: #fff;
+}
+
+/*1st image part */
+
+.imgDiv2{
+    position: relative;
+    background: url('../img/myPic/p.jpg');
+    height: 250px;
+    /* width: 300px; */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner1ImgDiv2{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: -50%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 1s all ease;
+    border-right: 1px solid white;
+
+    /*  */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgDiv2:hover .inner1ImgDiv2{
+    left: 0;
+}
+
+.inner1ImgDiv2 a{
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    background: yellowgreen;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    
+}
+
+.inner2ImgDiv2{
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 50%;
+    right: -50%;
+    position: absolute;
+    border-left: 1px solid white;
+    transition: 1s all ease;
+
+    /*  */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgDiv2:hover .inner2ImgDiv2{
+    right: 0;
+}
+
+.inner2ImgDiv2 a{
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    background: yellowgreen;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+/* card body part */
+
+.innerPortfolioSection .pImagePart{
+    margin-top: 60px;
+}
+
+.portCard .card-title h5{
+
+}
+
+.portCard .useLang span{
+    background-color: rgba(9, 121, 241, 0.075);
+    color: rgb(30, 118, 212);
+    border-radius: 25px;
+    font-size: 15px;
+    padding: 2px 13px;
+    display: inline-block;
+}
+
+.pImagePart .portInner .portCard{
+    height: 400px;
+}

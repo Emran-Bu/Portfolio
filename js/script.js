@@ -103,3 +103,7 @@ $("#example2").typer({
       useCursor:true
 
   });
+
+  // wow plugin
+
+  new WOW().init();
