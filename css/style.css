@@ -240,6 +240,7 @@ aside .sidebarIcon ul li a{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100%;
 
     /* z-index: -999; */
@@ -466,5 +467,122 @@ aside .sidebarIcon ul li a{
     left : 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.2);
+}
+
+/* right section */
+
+.aboutLeft{
+    margin-top: 200px;
+}
+
+
+.aboutLeftTitle h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.aboutLeftTitle h3 label{
+    color: #000000;
+}
+
+.aboutLeftTitle h3 span{
+    color: #e65f78;
+}
+
+.aboutRightText{
+    margin-bottom: 30px;
+}
+
+.aboutRightText p{
+    font-family: mulish;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: .5px;
+    word-wrap: break-word;
+    font-weight: 400;
+    background-color: #fff;
+    color: #333;
+}
+
+.aboutRightText p span{
+    color: #e65f78;
+    font-weight: 600;
+}
+
+/* My intro section */
+
+.intro{}
+
+.intro ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.intro ul li{
+    width: 50%;
+    float: left;
+    margin-top: 20px;
+    transition: 2s all ease-in-out;
+}
+
+.intro ul li span:hover{
+    border-bottom: 1px solid #aaa;
+}
+
+.intro ul li i{
+    color: #e65f78;
+    font-size: 22px;
+    margin-right: 13px;
+}
+
+.intro ul li label {
+    font-weight: 600;
+    color: #000;
+    min-width: 85px;
+}
+
+.myIntro .cv{
+    margin-top: 50px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.myIntro .cv a{
+    border-radius: 5px;
+    color: #eee;
+    padding: 10px 15px;
+    background: linear-gradient(90deg, red, blue);
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: 1s all ease-in-out;
+}
+
+.myIntro .cv a:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -300%;
+    width: 300%;
+    height: 300%;
+    transition: 1s all ease-in-out;
+    transform: rotate(45deg);
+}
+
+.myIntro .cv a:hover:before{
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0.3;
+    left: -130%;
+    transition: 1s all ease-in-out;
+    
+}
+
+.myIntro .cv a:hover{
+    color: #fff;
+    transition: 1s all ease-in-out;
 }

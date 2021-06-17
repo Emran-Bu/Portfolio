@@ -83,3 +83,23 @@ $('body').mousemove(function(e) {
   $('.myBorder').css('margin', - moveX + 'px ' + - moveY + 'px')
 
 })
+
+// script for typewriter right section
+
+$("#example2").typer({
+  strings: [
+      "Freelancer",
+      "Web Designer",
+      "Web Developer"
+  ],
+
+      typeSpeed: 60,
+      backspaceSpeed: 20,
+      backspaceDelay: 800,
+      repeatDelay: 1000,
+      repeat: true,
+      autoStart: true,
+      startDelay: 100,
+      useCursor:true
+
+  });
