@@ -680,7 +680,7 @@ aside .sidebarIcon ul li a{
     text-transform: uppercase;
 }
 
-.servicesTitleQ h2{
+.servicesTitleQ h3{
     font-size: 30px;
     font-weight: 700;
     margin-top: 10px;
@@ -723,4 +723,213 @@ aside .sidebarIcon ul li a{
 
 .servicesQ .contactServiceMe a:hover{
     border-bottom: 1px solid royalblue;
+}
+
+/* skills section */
+
+.skillsSection{
+    margin-bottom: 150px;
+}
+
+.skillsSection .skills{
+    margin-top: 15px;
+}
+
+.skillsSection .skillsTitle{
+    margin-bottom: 120px;
+}
+
+.skillsSection .skillsTitle span{
+    color: #e65f78;
+    font-family: poppins;
+    font-weight: 600;
+    text-transform: uppercase;
+} 
+
+.skillsSection .skillsTitle h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+} 
+
+/* 1st progress title */
+
+.skills-1 .progressTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills-1 .progressTitle p{
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.skills-1 .progressTitle span{
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.skillsSection .skills .progress{
+    height: 8px;
+}
+
+
+/*Percentage numSkills start */
+
+.skillsSection .skills .progress .progress-bar-html{
+    width: 80%;
+    background: none;
+}
+
+.skillsSection .skills .progress .progress-bar-css{
+    width: 70%;
+    background: none;
+}
+
+.skillsSection .skills .progress .progress-bar-bootstrap{
+    width: 65%;
+    background: none;
+}
+
+.skillsSection .skills .progress .progress-bar-javaScript{
+    width: 55%;
+    background: none;
+}
+
+.skillsSection .skills .progress .progress-bar-jquery{
+    width: 70%;
+    background: none;
+}
+
+.skillsSection .skills .progress .progress-bar-php{
+    width: 20%;
+    background: none;
+}
+
+
+
+
+/* margin top */
+
+.skillsSection .skills .css{
+    margin-top: 22px;
+}
+
+
+.skillsSection .skills .bootstrap{
+    margin-top: 22px;
+}
+
+.skillsSection .skills .javaScript{
+    margin-top: 22px;
+}
+
+.skillsSection .skills .jquery{
+    margin-top: 22px;
+}
+
+.skillsSection .skills .php{
+    margin-top: 22px;
+}
+
+
+/* 2nd progress title left part */
+
+
+.skills-2 .progressTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills-2 .progressTitle p{
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.skills-2 .progressTitle span{
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+
+/* margin top */
+
+.skillsSection .skills-2 .laravel{
+    margin-top: 22px;
+}
+
+
+.skillsSection .skills-2 .json{
+    margin-top: 22px;
+}
+
+.skillsSection .skills-2 .ajax{
+    margin-top: 22px;
+}
+
+.skillsSection .skills-2 .restApi{
+    margin-top: 22px;
+}
+
+.skillsSection .skills-2 .react{
+    margin-top: 22px;
+}
+
+
+/*Percentage numSkills start */
+
+.skillsSection .skills-2 .progress .progress-bar-mySQL{
+    width: 5%;
+    background: none;
+}
+
+.skillsSection .skills-2 .progress .progress-bar-laravel{
+    width: 5%;
+    background: none;
+}
+
+.skillsSection .skills-2 .progress .progress-bar-json{
+    width: 5%;
+    background: none;
+}
+
+.skillsSection .skills-2 .progress .progress-bar-ajax{
+    width: 5%;
+    background: none;
+}
+
+.skillsSection .skills-2 .progress .progress-bar-restApi{
+    width: 5%;
+    background: none;
+}
+
+.skillsSection .skills-2 .progress .progress-bar-react{
+    width: 5%;
+    background: none;
+}
+
+
+/* Skills _ Animation */
+
+
+.skillsSection .skills .progress .skillsAnimate{
+
+    width: 100%;
+    height : 10px;
+    background: #20c997;
+    border-radius: 5px;
+    animation-name: skillsAnimate;
+    animation-duration: 1s;
+}
+
+
+@keyframes skillsAnimate{
+    from{
+        width: 0px;
+    }
+    to{
+        width: 100%;
+    }
 }
