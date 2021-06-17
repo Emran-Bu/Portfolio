@@ -268,6 +268,12 @@ aside .sidebarIcon ul li a{
 
 }
 
+@media screen and (max-width: 767px) {
+    .mainBgImg .opa {
+      margin-top: 210px !important;
+    }
+  }
+
 
 .mainBg .mainBgImg::before{
     content: "";
@@ -594,6 +600,11 @@ aside .sidebarIcon ul li a{
     margin-bottom: 150px;
 }
 
+.academic .education{
+    background-color: #f9f9f9;
+    padding: 140px 0;
+}
+
 .education .eduTitle span{
     color: #e65f78;
     font-family: poppins;
@@ -605,11 +616,6 @@ aside .sidebarIcon ul li a{
     font-size: 30px;
     font-weight: 700;
     margin-top: 10px;
-}
-
-.academic .education{
-    background-color: #f9f9f9;
-    padding: 140px 0;
 }
 
 .eduTitle{
@@ -655,4 +661,66 @@ aside .sidebarIcon ul li a{
     line-height: 1.5;
     color: #212529;
     font-family: 'Poppins', sans-serif;
+}
+
+/* services section */
+
+.servicesQ{
+    margin-bottom: 150px;
+}
+
+.servicesTitleQ{
+    margin-bottom: 120px;
+}
+
+.servicesTitleQ span{
+    color: #e65f78;
+    font-family: poppins;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.servicesTitleQ h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.services2ndP .firstServices{
+    background-color: #f9f9f9;
+    box-shadow: 0 0 12px rgb(0 0 0   / 25%);
+    padding: 60px 25px;
+    transition: all .3s ease;
+    margin-bottom: 50px;
+}
+
+.services2ndP .firstServices i{
+    color: #e65f78;
+    margin-bottom: 45px;
+    font-size: 70px;
+}
+
+.services2ndP .firstServices h3{
+
+    margin-bottom: 15px;
+}
+
+.services2ndP .firstServices p{
+
+}
+
+.servicesQ .contactServiceMe p{
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.servicesQ .contactServiceMe a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.servicesQ .contactServiceMe a:hover{
+    border-bottom: 1px solid royalblue;
 }
