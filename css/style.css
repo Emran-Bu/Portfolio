@@ -1005,13 +1005,14 @@ aside .sidebarIcon ul li a{
 
 .imgDiv2{
     position: relative;
-    background: url('../img/myPic/p.jpg');
+    /* background: url('../img/myPic/p.jpg'); */
     height: 250px;
     /* width: 300px; */
     background-size: cover;
     background-position: center;
     position: relative;
     overflow: hidden;
+    border-bottom: 1px solid #20c997;
 }
 
 .inner1ImgDiv2{
@@ -1040,7 +1041,7 @@ aside .sidebarIcon ul li a{
     color: white;
     text-decoration: none;
     background: yellowgreen;
-    padding: 10px;
+    padding: 6px 11px;
     font-size: 20px;
     border-radius: 5px;
     
@@ -1070,16 +1071,145 @@ aside .sidebarIcon ul li a{
     position: absolute;
     color: white;
     text-decoration: none;
-    background: yellowgreen;
-    padding: 10px;
+    background: blue;
+    padding: 6px 24px;
     font-size: 20px;
     border-radius: 5px;
+}
+
+
+/* 1st Image Part */
+
+.portCard .cssimg1{
+    background: url(../img/Filtering_Portfolio/CSS/SliderCssWeb_1.PNG);
+    height: 250px;
+    background-size: cover;
+}
+
+/* 2nd Image Part */
+
+.portCard .cssimg2{
+    background: url(../img/Filtering_Portfolio/CSS/Blogin_2.PNG);
+    height: 250px;
+    background-size: cover;
+}
+
+/* 3rd Image Part */
+
+.portCard .cssimg3{
+    background: url(../img/Filtering_Portfolio/CSS/Fedelecius_2.PNG);
+    height: 250px;
+    background-size: cover;
+}
+
+/* 4th Image Part */
+
+.portCard .bootstrapImg1{
+    background: url(../img/Filtering_Portfolio/Bootstrap/EmranLab_BPNG-1.PNG);
+    height: 250px;
+    background-size: cover;
+}
+
+/* 5th Image Part */
+
+.portCard .bootstrapImg2{
+    background: url(../img/Filtering_Portfolio/Bootstrap/EmranBd_B-2.PNG);
+    height: 250px;
+    background-size: cover;
+}
+
+/* 6th Image Part */
+
+.portCard .javaScript1{
+    background: url(../img/Filtering_Portfolio/JavaScript/0.Testimonial\ Project\ ja.PNG);
+    height: 250px;
+    background-size: cover;
+}
+
+/* 7th Image Part */
+
+.portCard .javaScript2{
+    background: url(../img/Filtering_Portfolio/JavaScript/1.sum\ odd\ even\ leap\ year\ project\ 1\ of\ four\ project\ javas.PNG);
+    height: 250px;
+    background-size: cover;
+}
+
+/* 8th Image Part */
+
+.portCard .javaScript3{
+    background: url(../img/Filtering_Portfolio/JavaScript/2.Google_P_Ja.PNG);
+    height: 250px;
+    background-size: cover;
+}
+
+/* 9th Image Part */
+
+.portCard .javaScript4{
+    background: url(../img/Filtering_Portfolio/JavaScript/3.Poping\ Game\ JavaS.PNG);
+    height: 250px;
+    background-size: cover;
+}
+
+/* 10th Image Part */
+
+.portCard .javaScript5{
+    background: url(../img/Filtering_Portfolio/JavaScript/4.Win\ Lose\ Game\ ja.PNG);
+    height: 250px;
+    background-size: cover;
+}
+
+/* 11th Image Part */
+
+.portCard .javaScript6{
+    background: url(../img/Filtering_Portfolio/JavaScript/5.Sum\ Math\ Game\ ja.PNG);
+    height: 250px;
+    background-size: cover;
+}
+
+/* 12th Image Part */
+
+.portCard .javaScript7{
+    background: url(../img/Filtering_Portfolio/JavaScript/6key\ Detect\ p\ ja.PNG);
+    height: 250px;
+    background-size: cover;
+}
+
+/* 13th Image Part */
+
+.portCard .JQuery1{
+    background: url(../img/Filtering_Portfolio/Jquery/1.Ecommerce_W.PNG);
+    height: 250px;
+    background-size: cover;
+}
+
+/* 14th Image Part */
+
+.portCard .JQuery2{
+    background: url(../img/Filtering_Portfolio/Jquery/2.Filterable\ LightBox\ Jq\ p.PNG);
+    height: 250px;
+    background-size: cover;
+}
+
+/* 15th Image Part */
+
+.portCard .JQuery3{
+    background: url(../img/Filtering_Portfolio/Jquery/3.Calculator\ Jq\ p.PNG);
+    height: 250px;
+    background-size: cover;
 }
 
 /* card body part */
 
 .innerPortfolioSection .pImagePart{
     margin-top: 60px;
+}
+
+.innerPortfolioSection .pImagePart .col-4{
+    margin-bottom: 30px;
+}
+
+.portCard .card-body .useLang{
+    margin-top: 15px;
 }
 
 .portCard .card-title h5{
@@ -1090,9 +1220,10 @@ aside .sidebarIcon ul li a{
     background-color: rgba(9, 121, 241, 0.075);
     color: rgb(30, 118, 212);
     border-radius: 25px;
-    font-size: 15px;
+    font-size: 11px;
     padding: 2px 13px;
     display: inline-block;
+    margin-bottom: 8px;
 }
 
 .pImagePart .portInner .portCard{
