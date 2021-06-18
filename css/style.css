@@ -536,6 +536,12 @@ aside .sidebarIcon ul li a{
     transition: 2s all ease-in-out;
 }
 
+@media screen and (max-width: 767px) {
+    .intro ul li {
+        float: none;
+    }
+  }
+
 .intro ul li span:hover{
     border-bottom: 1px solid #aaa;
 }
@@ -1032,7 +1038,11 @@ aside .sidebarIcon ul li a{
     justify-content: center;
 }
 
-.imgDiv2:hover .inner1ImgDiv2{
+/* .imgDiv2:hover .inner1ImgDiv2{
+    left: 0;
+} */
+
+.portCard:hover .inner1ImgDiv2{
     left: 0;
 }
 
@@ -1063,7 +1073,11 @@ aside .sidebarIcon ul li a{
     justify-content: center;
 }
 
-.imgDiv2:hover .inner2ImgDiv2{
+/* .imgDiv2:hover .inner2ImgDiv2{
+    right: 0;
+} */
+
+.portCard:hover .inner2ImgDiv2{
     right: 0;
 }
 
@@ -1238,9 +1252,28 @@ aside .sidebarIcon ul li a{
 
 .work .history {}
 .work .history .experience{}
+
+.work .history .experienceTitle{
+    margin-bottom: 120px;
+}
+
+.work .history .experienceTitle span{
+    color: #e65f78;
+    font-family: poppins;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.work .history .experienceTitle h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
 .work .history .experience .exp{
     border-right: 1px solid #f3eaea;
     text-align: center;
+    /* border-bottom: 1px solid #f3eaea; */
 }
 
 .work .history .experience .exp:last-child{
@@ -1252,4 +1285,33 @@ aside .sidebarIcon ul li a{
     font-size: 60px;
     color: #888;
 }
-.work .history .experience .exp p{}
+.work .history .experience .exp{}
+
+@media screen and (max-width: 991px){
+    .work .history .experience .exp:nth-child(3){
+        border-right: none;
+    }
+    
+    .work .history .experience .exp{
+        border-bottom: 1px solid #f3eaea;
+    }
+
+    .work .history .experience .exp:nth-child(4){
+        border-right: 1px solid #f3eaea;
+        border-bottom: none;
+    }
+
+    .work .history .experience .exp:nth-child(5){
+        border-right: none;
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .work .history .experience .exp{
+        border-right: none;
+        margin-top: 20px;
+        border-bottom: none;
+        /* border-bottom: 1px solid #f3eaea; */
+    }
+}
