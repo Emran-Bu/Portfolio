@@ -539,6 +539,7 @@ aside .sidebarIcon ul li a{
 @media screen and (max-width: 767px) {
     .intro ul li {
         float: none;
+        width: 350px;
     }
   }
 
@@ -634,6 +635,7 @@ aside .sidebarIcon ul li a{
     border: 1px solid #ddd;
     padding: 25px;
     margin-bottom: 40px;
+    box-shadow: 0 0 12px rgb(0 0 0 / 25%);
 }
 
 .boxEdu .jdc h2{
@@ -1297,7 +1299,7 @@ aside .sidebarIcon ul li a{
     }
 
     .work .history .experience .exp:nth-child(4){
-        border-right: 1px solid #f3eaea;
+        /* border-right: 1px solid #f3eaea; */
         border-bottom: none;
     }
 
