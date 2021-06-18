@@ -1229,3 +1229,27 @@ aside .sidebarIcon ul li a{
 .pImagePart .portInner .portCard{
     height: 400px;
 }
+
+/* Work History Part */
+
+.work{
+    margin-bottom: 150px;
+}
+
+.work .history {}
+.work .history .experience{}
+.work .history .experience .exp{
+    border-right: 1px solid #f3eaea;
+    text-align: center;
+}
+
+.work .history .experience .exp:last-child{
+    border-right: none;
+}
+
+.work .history .experience .exp h2{
+    font-weight: bold;
+    font-size: 60px;
+    color: #888;
+}
+.work .history .experience .exp p{}

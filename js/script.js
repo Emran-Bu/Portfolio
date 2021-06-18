@@ -132,3 +132,8 @@ $("#example2").typer({
         }
     })
 })
+
+
+// jquery counter up part
+
+
