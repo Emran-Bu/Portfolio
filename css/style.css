@@ -1375,3 +1375,157 @@ aside .sidebarIcon ul li a{
     font-weight: 600;
     margin: 20px 0;
 }
+
+/* 1st modal part */
+
+.newsModalFirst .modal-body .firstNews .modalImg{
+    height: 500px;
+}
+
+.newsModalFirst .modal-body .modalImg img{
+    height: 100%;
+}
+
+.newsModalFirst .modal-body .firstNews .modalPara p{
+    color: #333;
+    font-family: mulish;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: .5px;
+    word-wrap: break-word;
+    font-weight: 400;
+}
+
+.newsModalFirst .modal-body .firstNews .modalPara blockquote{
+    border-left-color: #e65f78;
+    font-style: italic;
+    color: #000;
+    border-left: 2px solid #e65f78;
+    font-size: 12px;
+    margin-bottom: 15px;
+    background: #eee;
+    padding: 15px 0;
+    padding-left: 20px;
+}
+
+.newsModalFirst .modal-body .firstNews .modalPara .modalSocial{
+    display: flex;
+}
+
+.newsModalFirst .modal-body .firstNews .modalPara .modalSocial span{
+    font-family: poppins;
+    color: #000;
+    font-weight: 600;
+}
+/*
+.newsModalFirst .modal-body .firstNews .modalPara .modalSocial ul{
+    display: inline-block;
+}*/
+
+/* get Touch Section */
+
+.getTouchSection{
+    margin-bottom: 150px;
+}
+
+.getTouchSection .getTouch1st{
+
+}
+
+.getTouchSection .getTouch1st p{
+    color: #333;
+    font-family: mulish;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: .5px;
+    word-wrap: break-word;
+    font-weight: 400;
+}
+
+/* form section */
+
+.getTouchSection .getTouch1st .contact_form .returnmessage{
+    color: #3a00ff;
+    margin-bottom: 7px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.getTouchSection .getTouch1st .contact_form .empty_notice{
+    color: #f52225;
+    margin-bottom: 7px;
+    display: none;
+    text-align: left;
+    font-weight: 500;
+}
+
+.getTouchSection .getTouch1st .contact_form .first{}
+
+.getTouchSection .getTouch1st .contact_form .first ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.getTouchSection .getTouch1st .contact_form .first li{
+    margin: 0 0 30px;
+}
+
+.getTouchSection .getTouch1st .contact_form .first input{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.2);
+    background-color: #fff;
+
+    font-family: poppins;
+    line-height: 1.6;
+    padding: 10px;
+    height: 44px;
+    font-size: 15px;
+}
+
+.getTouchSection .getTouch1st .contact_form .first textarea{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.2);
+    height: 120px;
+    resize: none;
+    margin-bottom: 20px;
+    background-color: #fff;
+
+    font-family: poppins;
+    line-height: 1.6;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+.getTouchSection .getTouch1st .contact_form .subBtn{
+}
+
+.getTouchSection .getTouch1st .contact_form .subBtn a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #e65f78;
+    display: inline-block;
+    padding: 18px 45px;
+    font-family: poppins;
+    position: relative;
+    overflow: hidden;
+}
+
+.getTouchSection .getTouch1st .contact_form .subBtn a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25%;
+    height: 100%;
+    width: 0;
+    background: rgba(255,255,255,.1);
+    transform: skew(50deg);
+    transition-duration: .6s;
+    z-index: 1;
+}
+
+.getTouchSection .getTouch1st .contact_form .subBtn a:hover:before{
+    width: 150%;
+}
+
+/*      */

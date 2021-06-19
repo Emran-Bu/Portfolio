@@ -124,22 +124,54 @@ $("#example2").typer({
         }
     })
 
-    $('.gallery').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        gallery:{
-        enabled: true
-        }
-    })
+    // $('.gallery').magnificPopup({
+    //     delegate: 'a',
+    //     type: 'image',
+    //     gallery:{
+    //     enabled: true
+    //     }
+    // })
 })
 
 
 
 // news modal part
 
-var myModal = document.getElementById('myModal')
-var myInput = document.getElementById('myInput')
+// var myModal = document.getElementById('myModal')
+// var myInput = document.getElementById('myInput')
 
-myModal.addEventListener('shown.bs.modal', function () {
-  myInput.focus()
+// myModal.addEventListener('shown.bs.modal', function () {
+//   myInput.focus()
+// })
+
+
+
+
+// form validation part
+
+$(document).ready(function() {
+  $('.subBtn').click(function(e) {
+    e.preventDefault()
+    var name = $('#name')
+    var email = $('#email')
+    var message = $('#message')
+    $('#name').val('')
+    $('#email').val('')
+    $('#message').val('')
+    if ((name.val() == '') || (email.val() == '') || (message.val() == '')) {
+
+      $('.empty_notice').show(1000)
+
+      setInterval(() => {
+        $('.empty_notice').hide(3000)
+      }, 2000);
+
+    }
+
+    else{
+        alert("Thank You I will contact soon")
+    }
+    
+  })
+  
 })
