@@ -7,6 +7,28 @@
     box-sizing: border-box;
 }
 
+/* shuttle part */
+
+.toTop{
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #1e2d65;
+    transform: rotate(-90deg);
+    z-index: 999;
+}
+
+.toTop i{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: wheat;
+    font-size: 20px;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -114,7 +136,11 @@ body{
     transition: 0.2s ease;
 }
 
-.nav-link.active{
+/* .nav-link.active{
+    color: #20c997 !important;
+} */
+
+#nav2 .active2 a{
     color: #20c997 !important;
 }
 
@@ -195,7 +221,11 @@ aside ul li a{
     padding: 13px;
 }
 
-aside ul li a.active{
+/* #nav .current a{
+    color: #20c997 !important;
+} */
+
+#nav .active a{
     color: #20c997 !important;
 }
 
