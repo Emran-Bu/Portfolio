@@ -193,3 +193,41 @@ $(document).ready(function() {
   })
   
 })
+
+
+// Color Switcher
+
+document.querySelector('.switcher-btn').onclick = () => {
+  document.querySelector('.color-switcher').classList.toggle('active')
+}
+
+let themeButtons = document.querySelectorAll('.theme-buttons')
+
+themeButtons.forEach(colors => {
+  colors.addEventListener('click', function() {
+      let dataColor = colors.getAttribute('data-color')
+
+      // document.querySelector(':root').style.setProperty('--main-color', dataColor)
+
+      var change = document.querySelectorAll('.changeColor')
+
+      for (const changes of change) {
+        changes.style.color = dataColor
+      }
+      // 
+
+      // document.querySelector('h2').style.color = dataColor
+  })
+});
+
+// magic mouse section
+
+
+
+// document.querySelector('.mouseIcon1').addEventListener('click', function() {
+//   document.querySelector('.mainCursor').style.display = "block"
+// })
+
+// document.querySelector('.mouseIcon2').addEventListener('click', function() {
+//   document.querySelector('.mainCursor').style.display = "none"
+// })
