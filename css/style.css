@@ -543,6 +543,13 @@ aside .sidebarIcon ul li a{
     }
   }
 
+@media screen and (max-width: 376px) {
+    .intro ul li {
+        float: none;
+        width: 280px;
+    }
+  }
+
 .intro ul li span:hover{
     border-bottom: 1px solid #aaa;
 }
@@ -1528,4 +1535,52 @@ aside .sidebarIcon ul li a{
     width: 150%;
 }
 
-/*      */
+/*   footer   */
+
+.footer{}
+
+.footer .footerBody{
+    /* padding: 0 0 140px; */
+    background: #000; padding: 60px;
+}
+.footer .footerBody .footerTile{
+     
+}
+
+.footer .footerBody .footerTile p{
+    color: #fff;
+}
+
+.footer .footerBody .footerTile p span{
+    color: #28a745;
+}
+
+.footer .footerBody .footerTile p span:hover{
+    color: #28a745;
+    border-bottom: 1px solid #20C997;
+}
+
+.footer .footerBody .footerTile .terms a{
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer .footerBody .footerTile .terms a:hover{
+    border-bottom: 1px solid #20C997;
+}
+
+
+.footer .footerBody .socialPartF{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .footer .footerBody .socialPartF{
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

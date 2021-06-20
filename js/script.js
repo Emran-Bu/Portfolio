@@ -155,9 +155,7 @@ $(document).ready(function() {
     var name = $('#name')
     var email = $('#email')
     var message = $('#message')
-    $('#name').val('')
-    $('#email').val('')
-    $('#message').val('')
+    
     if ((name.val() == '') || (email.val() == '') || (message.val() == '')) {
 
       $('.empty_notice').show(1000)
@@ -171,6 +169,10 @@ $(document).ready(function() {
     else{
         alert("Thank You I will contact soon")
     }
+
+    $('#name').val('')
+    $('#email').val('')
+    $('#message').val('')
     
   })
   
