@@ -333,3 +333,5 @@ $(document).ready(function(){
 setTimeout(() => {
   $('.loader_bg').fadeToggle()
 }, 1500);
+
+// End
