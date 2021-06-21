@@ -1744,6 +1744,16 @@ aside .sidebarIcon ul li a{
     /* z-index: -1; */
 }
 
+@media screen and (max-width:991px) {
+    
+    .pointerOutside{
+        display: none;
+    }
+    .pointerCenter{
+        display: none;
+    }
+}
+
 .overlay{
     /* background: tomato; */
     background: var(--main-color);

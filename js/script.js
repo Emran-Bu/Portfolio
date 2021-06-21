@@ -223,16 +223,6 @@ themeButtons.forEach(colors => {
 // magic mouse section
 
 
-
-// document.querySelector('.mouseIcon1').addEventListener('click', function() {
-//   document.querySelector('.mainCursor').style.display = "block"
-// })
-
-// document.querySelector('.mouseIcon2').addEventListener('click', function() {
-//   document.querySelector('.mainCursor').style.display = "none"
-// })
-
-
 $(document).ready(function(){
   $(document).mousemove(function(e){
      setTimeout(() => {
@@ -254,7 +244,9 @@ $(document).ready(function(){
   // })
 
   $('.magic-cursor').hover(function(e) {
-      $('.pointerOutside').hide()
+      // $('.pointerOutside').hide()
+      // $('.pointerOutside').css({'display':'none'})
+      $('.pointerOutside').css({'opacity':'0'})
       // $('.pointerCenter').css({'background':'transparent'})
       // $('.pointerCenter').css({'display':'none'})
       $('.pointerCenter').css({'opacity':'0.3'})
@@ -262,9 +254,10 @@ $(document).ready(function(){
   })
 
   $('.magic-cursor').mouseleave(function() {
+    $('.pointerOutside').css({'opacity':'1'})
       // $('.pointerCenter').css({'background':'#A13838'})
       $('.pointerCenter').css({'opacity':'1'})
-      $('.pointerCenter').css({'display':'block'})
+      // $('.pointerCenter').css({'display':'block'})
       $('.pointerOutside').show()
       $('.overlay').removeClass('on');
   })
@@ -281,13 +274,15 @@ $(document).ready(function(){
     $('.overlay').show();
 
           $('.magic-cursor').hover(function(e) {
-              $('.pointerOutside').hide()
+              // $('.pointerOutside').hide()
+              $('.pointerOutside').css({'opacity':'0'})
               // $('.pointerCenter').css({'background':'transparent'})
               $('.pointerCenter').css({'opacity':'0.3'})
               $('.overlay').addClass('on');
           })
 
         $('.magic-cursor').mouseleave(function() {
+          $('.pointerOutside').css({'opacity':'1'})
             // $('.pointerCenter').css({'background':'#A13838'})
             // $('.pointerCenter').css({'display':'block'})
             $('.pointerCenter').css({'opacity':'1'})
@@ -295,24 +290,27 @@ $(document).ready(function(){
             $('.overlay').removeClass('on');
         })
 
-        $('html').mouseleave(function() {
-            $('.pointerOutside').hide()
-            $('.pointerCenter').hide()
-        })
+        // $('html').mouseleave(function() {
+        //     $('.pointerOutside').hide()
+        //     $('.pointerCenter').hide()
+        // })
 
-        $('html').mouseenter(function() {
-            $('.pointerOutside').show()
-            $('.pointerCenter').show()
-        })
+        // $('html').mouseenter(function() {
+        //     $('.pointerOutside').show()
+        //     $('.pointerCenter').show()
+        // })
 
   })
 
 //
 
   $('.defaultMouse').click(function() {
-    $('.pointerOutside').hide()
-    $('.pointerCenter').hide()
+    $('.pointerOutside').hide();
+    $('.pointerCenter').hide();
     $('.overlay').hide();
+    // $('.pointerOutside').css({'display':'none'})
+    $('.pointerCenter').css({'display':'none'})
+    // $('.overlay').css({'display':'none'})
 
       $('.magic-cursor').mouseleave(function() {
           $('.pointerCenter').css({'background':'transparen'})
@@ -320,10 +318,10 @@ $(document).ready(function(){
           $('.overlay').removeClass('on');
       })
 
-      $('html').mouseleave(function() {
-          $('.pointerOutside').hide()
-          $('.pointerCenter').hide()
-      })
+      // $('html').mouseleave(function() {
+      //     $('.pointerOutside').hide()
+      //     $('.pointerCenter').hide()
+      // })
 
 })
 })
