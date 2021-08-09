@@ -1788,9 +1788,21 @@ aside .sidebarIcon ul li a{
     
     .pointerOutside{
         display: none;
+        opacity: 0;
     }
     .pointerCenter{
         display: none;
+    }
+
+    .pointerOutside:hover{
+        display: none;
+    }
+
+    .circleMouse{
+        pointer-events: none;
+        cursor: default;
+        text-decoration: none;
+        color: black;
     }
 }
 

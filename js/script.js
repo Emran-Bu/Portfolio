@@ -258,7 +258,7 @@ $(document).ready(function(){
       // $('.pointerCenter').css({'background':'#A13838'})
       $('.pointerCenter').css({'opacity':'1'})
       // $('.pointerCenter').css({'display':'block'})
-      $('.pointerOutside').show()
+      // $('.pointerOutside').show()  ----------change off korchi-----------//
       $('.overlay').removeClass('on');
   })
 
@@ -272,6 +272,10 @@ $(document).ready(function(){
     $('.pointerOutside').show()
     $('.pointerCenter').show()
     $('.overlay').show();
+
+    $('.pointerOutside').css({'display':'block'})
+    $('.pointerCenter').css({'display':'block'})
+    $('.overlay').css({'display':'block'})
 
           $('.magic-cursor').hover(function(e) {
               // $('.pointerOutside').hide()
@@ -308,15 +312,18 @@ $(document).ready(function(){
     $('.pointerOutside').hide();
     $('.pointerCenter').hide();
     $('.overlay').hide();
-    // $('.pointerOutside').css({'display':'none'})
+    $('.pointerOutside').css({'display':'none'})
     $('.pointerCenter').css({'display':'none'})
-    // $('.overlay').css({'display':'none'})
+    $('.overlay').css({'display':'none'})
 
-      $('.magic-cursor').mouseleave(function() {
-          $('.pointerCenter').css({'background':'transparen'})
-          $('.pointerOutside').hide()
-          $('.overlay').removeClass('on');
-      })
+    $('.magic-cursor').mouseleave(function() {
+      $('.pointerOutside').css({'opacity':'0'})
+        // $('.pointerCenter').css({'background':'#A13838'})
+        // $('.pointerCenter').css({'display':'block'})
+        $('.pointerCenter').css({'opacity':'0'})
+        $('.pointerOutside').hide()
+        $('.overlay').removeClass('on');
+    })
 
       // $('html').mouseleave(function() {
       //     $('.pointerOutside').hide()
